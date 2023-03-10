@@ -1,0 +1,151 @@
+/* Add some styling for the dice and the game */
+/* Start Variable */
+:root {
+  --black-color: black;
+  --white-color: white;
+  --gold-color: gold;
+  --main-transition: 0.3s;
+  --section-padding: 50px;
+  --section-padding: 50px;
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  /* padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding); */
+}
+
+/* End Variable */
+
+/* Start Global Rules */
+* {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--black-color);
+}
+
+/* اعملت هاي علشان بدي اللون اللي ورا يملا الشاشة لكن الكونتنت اللي ورا تملا من الاول للاخر */
+.container {
+  /* كتبنا ال بادنك علشان الكلام في نسخة الموبايل ما يبلش من اول الشاشة */
+  padding-left: 15px;
+  padding-right: 15px;
+  /* علشان الكونتينر يمسك العناصر في النص */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small screens */
+@media (min-width: 768px){
+  .container {
+      width: 750px;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 992px){
+  .container{
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/**************************************************/
+
+.game .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.game h1 {
+  color: var(--gold-color);
+  margin-bottom: 30px;
+  font-size: 70px;
+  letter-spacing: 10;
+  font-family: 'Kolker Brush', cursive;
+}
+
+.game .number {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game .number #player1,
+.game .number #player2 {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+#player1 #player1-score, #player2 #player2-score {
+  display: block;
+  font-family: 'Shojumaru', cursive;
+  width: 130px;
+  height: 130px;
+  color: var(--black-color);
+  background-color: var(--gold-color);
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.game .number {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+#roll, #hold {
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px;
+}
+
+.game .button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.game .button button,
+.game .message button {
+  width: 130px;
+  padding: 8px;
+  color: var(--black-color);
+  border: 1px solid var(--white-color);
+  /* background-color: var(--white-color); */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+#message {
+  color: var(--white-color);
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}

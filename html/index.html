@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dice.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="game" id="game">
+    <div class="container">
+      <h1>Dice Game</h1>
+      <div class="number">
+        <div id="player1">Player 1: <span id="player1-score">0</span></div>
+        <div id="player2">Player 2: <span id="player2-score">0</span></div>
+      </div>
+      <div class="button">
+        <button id="roll">Roll</button>
+        <button id="hold">Hold</button>
+      </div>
+      <div class="message">
+        <button id="reset" onclick="location.reload()">Reset</button>
+        <p id="message"></p>
+      </div>
+    </div>
+  </div>
+    <script src="../js/dice.js"></script>
+</body>
+</html>
